@@ -18,7 +18,8 @@
 int main( int argc, char *argv[] ) {
   int i,j,k,cnt,br;
   int ich;
-  long foff,roff,off;
+  long foff,roff;
+  long off=0;
   int sr;
   int recno;
   int blkno;
@@ -121,6 +122,7 @@ printf( "    -b[value]   Block Size = [value] records per block\n" );
 printf( "    -x[value]   maX bytes per display line\n" );
 printf( "    -v          Verbose mode - echo input parameters\n" );
 printf( "    -s          Statistics are collected on file\n" );
+printf( "    -o          file base Offset, in hex, shown in ouput\n" );
 printf( "  [Filename]    If specified, otherwise from standard input\n" );
           exit(0);
       }
@@ -147,7 +149,6 @@ printf( "  [Filename]    If specified, otherwise from standard input\n" );
   recno=0;
   foff=0;
   roff=0;
-  off=0;
   i=0;
   hs2=hs;
   lc=0;
