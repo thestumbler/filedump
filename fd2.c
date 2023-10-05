@@ -147,6 +147,7 @@ printf( "  [Filename]    If specified, otherwise from standard input\n" );
   recno=0;
   foff=0;
   roff=0;
+  off=0;
   i=0;
   hs2=hs;
   lc=0;
